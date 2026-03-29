@@ -2,7 +2,7 @@ name: actions usefulness
 on: [push]
 jobs:
     test-actions:
-        runs-on: [ubuntu-lates]
+        runs-on: [ubuntu-latest]
         steps:
         - name: checkout action
           uses: actions/chackout@v4
