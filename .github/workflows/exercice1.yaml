@@ -1,7 +1,8 @@
 name: workflow run echo
 on: [push]
 jobs:
-  name: job run echo
+  job_runç_echo
+  runs-on: [ubuntu-latest]
   steps:
   - name: stop run hello word
     runs: echo Hello word
