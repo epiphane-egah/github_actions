@@ -1,0 +1,14 @@
+name: actions usefulness
+on: [push]
+jobs:
+    test-actions:
+        runs-on: [ubuntu-lates]
+        steps:
+        - name: checkout action
+          uses: actions/chackout@v4
+        - name: print repersitory
+          run: ls -l
+          
+
+          
+
