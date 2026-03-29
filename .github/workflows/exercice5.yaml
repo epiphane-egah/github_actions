@@ -1,0 +1,11 @@
+name: strategy use case
+on: push
+jobs:
+    one_job:
+        runs-on: ${{matrix.os}}
+        strategy: 
+            matrix:
+                os: [ubuntu-lates, ubuntu-24.04] 
+        steps:
+            - name: print step
+              run: echo ${{matrix.os}}
