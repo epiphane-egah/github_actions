@@ -1,0 +1,10 @@
+name: new level
+on: push
+jobs:
+    print-info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print info
+              run: |
+                echo ${{github.repository}}
+                echo ${{github.ref}}
