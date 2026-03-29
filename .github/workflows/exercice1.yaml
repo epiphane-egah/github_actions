@@ -1,0 +1,7 @@
+name: workflow run echo
+on: [push]
+jobs:
+  name: job run echo
+  steps:
+  - name: stop run hello word
+    runs: echo Hello word
