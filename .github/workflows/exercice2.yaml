@@ -1,0 +1,13 @@
+name: multiple steps
+on: [push]
+jobs:
+    multiple-steps-job:
+        runs-on: [ubuntu-latest]
+        steps:
+        - name: affichier
+          run: echo Start
+          shell: bash
+        - name: afficher la date
+          run: echo $(date)
+        - name: afficher la fin
+          run: echo End
